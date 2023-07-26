@@ -47,7 +47,6 @@ class App extends React.Component {
       window.removeEventListener('beforeunload', this.handleBeforeUnload);
     }
   };
-
   componentDidMount() {
     window.addEventListener('beforeunload', this.handleBeforeUnload);
     fetch('https://jsonplaceholder.typicode.com/users')
